@@ -71,20 +71,34 @@ angularjs-boilerplate
 
 ## Style Guild
 
-## Bower.json
+## Project Configuration
+
+Following part let me show you how do I configure this project.
+
+### Bower.json
 
 Add following dependencies:
 
 1. [AngularJS](http://angularjs.org)
 2. [Bootstrap](http://getbootstrap.com/2.3.2/)
 
-## package.json
+### package.json
 
+We need following Grunt Plugins:
+
+1. [grunt-contrib-jshint](https://npmjs.org/package/grunt-contrib-jshint): Validate file with JSHint, similar with JSLint
+2. [grunt-contrib-uglify](https://npmjs.org/package/grunt-contrib-uglify): Minify files with UglifyJS
+3. [grunt-contrib-watch](https://npmjs.org/package/grunt-contrib-watch): Run predefined tasks whenever watched file patterns are added, changed or deleted
+4. [grunt-contrib-clean](https://npmjs.org/package/grunt-contrib-clean): Clean files and folders
+5. [grunt-contrib-copy](https://npmjs.org/package/grunt-contrib-copy): Copy files and folders
+6. [grunt-contrib-concat](https://npmjs.org/package/grunt-contrib-concat):  Concatenate files
+7. [grunt-contrib-connect](https://npmjs.org/package/grunt-contrib-connect): Start a connect web server
 
 -------
-You can get more information from [specification](https://npmjs.org/doc/json.html)
+* Get more information from [specification](https://npmjs.org/doc/json.html)
+* See all grunt plugins from [Grunt Plugins](http://gruntjs.com/plugins#/)
 
-## Gruntfile.js
+### Gruntfile.js
 
 ## Requirements
 
