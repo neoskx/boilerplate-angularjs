@@ -49,8 +49,8 @@ angularjs-boilerplate
 * `README.md`:  introduce this boilerplate, includes how to use it and get started of this boilerplate
 * `src`: The folder is separated based on [__Modularity__](http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript), the style guide is:
     1. All  module should put in `app` folder. For example, in you application, you have `landing`, `environment`, `environment wizard`, `environment detail`, `environment node detail`, `environment general detail`, so the folder structure should be: 
-  >    
-    ```
+
+        ```
     app/
         |-- landing/
             |-- landing.js
@@ -61,7 +61,7 @@ angularjs-boilerplate
         |-- environment.wizard/
         |-- environment.detail.node/
         |-- environment.detail.general/
-    ```
+        ```
     2. Put all the styles to `assets` folder, also images, each module folder include js and template file
     3. File Name Standard：
         * Test file:          **.spec.js
