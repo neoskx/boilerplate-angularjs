@@ -47,7 +47,7 @@ angularjs-boilerplate
 *  `LICENSE`: describe the detail of license
 *  `package.json`: describes this project's information, such as: name, version. And define needed Grunt plugins
 * `README.md`:  introduce this boilerplate, includes how to use it and get started of this boilerplate
-* `src`: The folder is separated based on __Modularity__[^1], the style guide is:
+* `src`: The folder is separated based on [__Modularity__](http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript), the style guide is:
     1. All  module should put in `app` folder. For example, in you application, you have `landing`, `environment`, `environment wizard`, `environment detail`, `environment node detail`, `environment general detail`, so the folder structure should be: 
   >    
     ```
@@ -69,15 +69,33 @@ angularjs-boilerplate
         * Language file: **.lang.js
  * `vendor`:  Install all used libraries to this folder
 
-
-[^1]: [code organization angularjs javascript](http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript)
-[^2]: Why I do it like this?
-
 ## Style Guild
 
+## Bower.json
+
+Add following dependencies:
+
+1. [AngularJS](http://angularjs.org)
+2. [Bootstrap](http://getbootstrap.com/2.3.2/)
+
+## package.json
+
+
+-------
+You can get more information from [specification](https://npmjs.org/doc/json.html)
+
+## Gruntfile.js
 
 ## Requirements
-_Requirement of this project_
+
+Before you use this boilerplate you should learn following technologies before:
+
+1. [AngularJS](http://angularjs.org): A front end develop framework
+2. [Bootstrap](http://getbootstrap.com/2.3.2/): Sleek, intuitive, and powerful front-end framework for faster and easier web development
+3. [jQuery](http://jquery.com): A fast, small, and feature-rich JavaScript library
+4. [Bower](http://bower.io): A package manager for the web
+5. [Grunt](http://gruntjs.com): The JavaScript Task Runner
+6. [Jenkins](http://jenkins-ci.org): Continuous integration server
 
 ## Resources
 _If use third part library, add third part library_
