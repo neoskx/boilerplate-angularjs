@@ -69,7 +69,12 @@ angularjs-boilerplate
         * Language file: **.lang.js
  * `vendor`:  Install all used libraries to this folder
 
-## Style Guild
+## Style Guide
+
+1. **JavaScript Style Guide**
+    
+    Recommend [Google's JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+2. 
 
 ## Project Configuration
 
@@ -84,7 +89,7 @@ Add following dependencies:
 
 ### package.json
 
-We need following Grunt Plugins:
+Needed following Grunt Plugins:
 
 1. [grunt-contrib-jshint](https://npmjs.org/package/grunt-contrib-jshint): Validate file with JSHint, similar with JSLint
 2. [grunt-contrib-uglify](https://npmjs.org/package/grunt-contrib-uglify): Minify files with UglifyJS
