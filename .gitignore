@@ -3,3 +3,6 @@
 build/
 bin/
 node_modules/
+log/
+logs/
+client/src/assets/css/*
