@@ -12,19 +12,30 @@ module.exports = {
      */
 	'build_dir':'build',
 
+	'source_dir': 'src',
+
+	/**
+	 * `log` this folder store all the log files
+	 */
+	'log': 'log',
+
 	'app_files': {
 		// All the JavaScript files used in this project
-		'app_js': ['src/**/*.js', '!src/**/*.spec.js', '!src/**/*.lang.js'],
+		'app_js': ['<%= source_dir %>/**/*.js', '!<%= source_dir %>/**/*.spec.js', '!<%= source_dir %>/**/*.lang.js'],
 		// All test files
-		'spec_js': ['src/**/*.spec.js'],
+		'spec_js': ['<%= source_dir %>/**/*.spec.js'],
 		// Language files
-		'lang_js': ['src/**/*.lang.js'],
+		'lang_js': ['<%= source_dir %>/**/*.lang.js'],
 
 		// All templates in this project. we will put template to angular templatecache
-		'tpl': ['src/**/*.tpl.html'],
+		'tpl': ['<%= source_dir %>/**/*.tpl.html'],
 		// All css file.
-		'less': ['src/less/stylesheet.less'],
-		'lessWatch':['src/less/**/*.less']
+		'less': {
+			'src':['<%= source_dir %>/assets/less/stylesheet.less'],
+			'dest_dev':'<%= source_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css',
+			'dest_prod':'<%= release_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css'
+		},
+		'lessWatch':['<%= source_dir %>/assets/less/**/*.less']
 	}
 
 };

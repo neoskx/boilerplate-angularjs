@@ -98,12 +98,34 @@ Needed following Grunt Plugins:
 5. [grunt-contrib-copy](https://npmjs.org/package/grunt-contrib-copy): Copy files and folders
 6. [grunt-contrib-concat](https://npmjs.org/package/grunt-contrib-concat):  Concatenate files
 7. [grunt-contrib-connect](https://npmjs.org/package/grunt-contrib-connect): Start a connect web server
+8. [grunt-recess](https://npmjs.org/package/grunt-recess): Lint and minify CSS and LESS
 
 -------
 * Get more information from [specification](https://npmjs.org/doc/json.html)
 * See all grunt plugins from [Grunt Plugins](http://gruntjs.com/plugins#/)
 
 ### Gruntfile.js
+
+#### jshint
+
+```
+'jshint': {
+  'options': {
+    'globals':{
+      'jQuery':true,
+      'angular':true
+    },
+    'force':true,
+    'reporter': 'checkstyle',
+    'reporterOutput': '<%= build_dir %>/jshint-reporter.xml'
+  },
+  'app_js': ['<%= app_files.app_js %>']
+}
+```
+
+`jshint` will search all js files except test file and language files, and run `jshint ` to validate, and put result to `build/jshint-reporter.xml`
+
+
 
 ## Requirements
 
