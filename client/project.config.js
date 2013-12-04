@@ -3,9 +3,9 @@
  */
 module.exports = {
 	/**
-     * `release_dir` this folder store all compiled files that is ready for **Release**.
+     * `production_dir` this folder store all compiled files that is ready for **Release**.
      */
-	'release_dir': 'release',
+	'production_dir': 'release',
 	
 	/**
      * `build_dir` this folder store all compiled JavaScript, CSS, HTML, images... sources.
@@ -33,7 +33,7 @@ module.exports = {
 		'less': {
 			'src':['<%= source_dir %>/assets/less/stylesheet.less'],
 			'dest_dev':'<%= source_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css',
-			'dest_prod':'<%= release_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css'
+			'dest_prod':'<%= production_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css'
 		},
 		'lessWatch':['<%= source_dir %>/assets/less/**/*.less']
 	}

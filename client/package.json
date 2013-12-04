@@ -15,7 +15,8 @@
    "grunt-contrib-copy":       "~0.4.1",
    "grunt-contrib-concat":     "~0.3.0",
    "grunt-contrib-connect":    "~0.5.0",
-   "grunt-recess":             "~0.3"
+   "grunt-recess":             "~0.3",
+   "grunt-html2js":            "0.2.2"
  }
 
 }

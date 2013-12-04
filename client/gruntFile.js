@@ -1,10 +1,12 @@
 
 module.exports = function(grunt) {
+
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-html2js');
 
   /**
    * Load the custom project configuration file
@@ -76,10 +78,25 @@ module.exports = function(grunt) {
         'src': ['<%= app_files.less.src%>'],
         'dest':'<%= app_files.less.dest_prod%>'
       }
+    },
+
+    /**
+     * `grunt-html2js`: Compiles AngularJS templates to JavaScript
+     * 1. In `development` mode, we don't compile it
+     * 2. In `procduction` mode, we compile it, and put it to `partials/template.js`
+     */
+    'html2js':{
+      'development':{
+      },
+      'production':{
+        'options':{
+          'base': 'src'
+        },
+        'src':['<%= app_files.tpl %>'],
+        'dest':'<%= production_dir %>/partials/template.js'
+      }
     }
-
   };
-
 
   // Project configuration.
   grunt.initConfig(grunt.util._.extend(commonConfig, projectConfig));
@@ -88,3 +105,13 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['jshint']);
 
 };
+
+
+
+
+
+
+
+
+
+
