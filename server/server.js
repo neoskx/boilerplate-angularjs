@@ -32,6 +32,7 @@ app.use(xsrf);                                            // Add XSRF checks to 
 security.initialize(config.mongo.dbUrl, config.mongo.apiKey, config.security.dbName, config.security.usersCollection); // Add a Mongo strategy for handling the authentication
 
 app.use(function(req, res, next) {
+  console.log("**** app.use ****");
   if ( req.user ) {
     console.log('Current User:', req.user.firstName, req.user.lastName);
   } else {
