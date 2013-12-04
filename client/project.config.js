@@ -3,14 +3,14 @@
  */
 module.exports = {
 	/**
-     * `production_dir` this folder store all compiled files that is ready for **Release**.
-     */
+	 * `production_dir` this folder store all compiled files that is ready for **Release**.
+	 */
 	'production_dir': 'release',
-	
+
 	/**
-     * `build_dir` this folder store all compiled JavaScript, CSS, HTML, images... sources.
-     */
-	'build_dir':'build',
+	 * `build_dir` this folder store all compiled JavaScript, CSS, HTML, images... sources.
+	 */
+	'build_dir': 'build',
 
 	'source_dir': 'src',
 
@@ -21,7 +21,7 @@ module.exports = {
 
 	'app_files': {
 		// All the JavaScript files used in this project
-		'app_js': ['<%= source_dir %>/**/*.js', '!<%= source_dir %>/**/*.spec.js', '!<%= source_dir %>/**/*.lang.js'],
+		'app_js': ['<%= source_dir %>/**/*.js', '!<%= source_dir %>/**/*.spec.js', '!<%= source_dir %>/**/*.lang.js', '!<%= source_dir %>/vendor/**/*.js'],
 		// All test files
 		'spec_js': ['<%= source_dir %>/**/*.spec.js'],
 		// Language files
@@ -31,11 +31,22 @@ module.exports = {
 		'tpl': ['<%= source_dir %>/**/*.tpl.html'],
 		// All css file.
 		'less': {
-			'src':['<%= source_dir %>/assets/less/stylesheet.less'],
-			'dest_dev':'<%= source_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css',
-			'dest_prod':'<%= production_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css'
+			'src': ['<%= source_dir %>/assets/less/stylesheet.less'],
+			'dest_dev': '<%= source_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css',
+			'dest_prod': '<%= production_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css'
 		},
-		'lessWatch':['<%= source_dir %>/assets/less/**/*.less']
-	}
+		'lessWatch': ['<%= source_dir %>/assets/less/**/*.less']
+	},
 
+	'vendor_files': {
+		'js': [
+			'vendor/angular/angular.js',
+			'vendor/angular/angular-route.js',
+			'vendor/angular-ui/bootstrap/ui-bootstrap-custom-0.1.0-SNAPSHOT.js',
+			'vendor/jquery/jquery.js',
+			'vendor/mongolab/mongolab-resource.js'
+		],
+		'css': [],
+		'assets': []
+	}
 };

@@ -2,7 +2,7 @@ angular.module('projects', ['resources.projects', 'productbacklog', 'sprints', '
 
 .config(['$routeProvider', 'securityAuthorizationProvider', function ($routeProvider, securityAuthorizationProvider) {
   $routeProvider.when('/projects', {
-    templateUrl:'projects/projects-list.tpl.html',
+    templateUrl:'app/projects/projects-list.tpl.html',
     controller:'ProjectsViewCtrl',
     resolve:{
       projects:['Projects', function (Projects) {

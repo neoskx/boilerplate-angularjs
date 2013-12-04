@@ -189,7 +189,7 @@ You can configure your project's LESS files in `project.config.js`.  Default I a
     
     Compile LESS files and compress it, then put it in **production folder**(this folder you can configure it in `project.config.js`)
    
-#### html2js
+#### html2js -- [grunt-html2js](https://npmjs.org/package/grunt-html2js)
 
 ```
 'html2js':{

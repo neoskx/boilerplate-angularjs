@@ -8,9 +8,7 @@ angular.module('app', [
   'services.i18nNotifications',
   'services.httpRequestTracker',
   'security',
-  'directives.crud',
-  'templates.app',
-  'templates.common']);
+  'directives.crud']);
 
 angular.module('app').constant('MONGOLAB_CONFIG', {
   baseUrl: '/databases/',

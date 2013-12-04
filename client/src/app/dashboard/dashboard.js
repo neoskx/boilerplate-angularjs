@@ -2,7 +2,7 @@ angular.module('dashboard', ['resources.projects', 'resources.tasks'])
 
 .config(['$routeProvider', function ($routeProvider) {
   $routeProvider.when('/dashboard', {
-    templateUrl:'dashboard/dashboard.tpl.html',
+    templateUrl:'app/dashboard/dashboard.tpl.html',
     controller:'DashboardCtrl',
     resolve:{
       projects:['Projects', function (Projects) {

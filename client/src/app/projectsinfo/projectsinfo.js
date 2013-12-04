@@ -1,7 +1,7 @@
 angular.module('projectsinfo', [], ['$routeProvider', function($routeProvider){
 
   $routeProvider.when('/projectsinfo', {
-    templateUrl:'projectsinfo/list.tpl.html',
+    templateUrl:'app/projectsinfo/list.tpl.html',
     controller:'ProjectsInfoListCtrl',
     resolve:{
       projects:['Projects', function(Projects){
