@@ -1,0 +1,267 @@
+html, body {
+    height: 100%;
+}
+
+footer {
+    color: #666;
+    background-color: #ffffff;
+    padding: 17px 0 18px 0;
+    border-top: 0px solid #000;
+    text-align:center
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: #efefeg;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -63px;
+}
+
+.contentNav {
+    background-color:none;
+}
+
+.navbar{
+margin-bottom:52px;
+}
+
+.navbar-inner {
+    background-color: #26a2ed; /* background color will be black for all browsers */
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
+.cEnterprise{
+    color: #26a2ed;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size:27px;
+    font-weight:bold;
+    margin:0px 0px 0px 0px
+}
+
+.cLogo{
+    margin:42px 0px 45px 0px
+}
+
+.cHint{
+    color: #000000;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size:16px;
+    font-weight:normal;
+    margin:0px 0px 38px 0px
+}
+
+
+
+#login-form > input {
+    width:212px;
+}
+
+
+
+
+.leftNav{
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size:13px;
+    font-weight:normal;
+    border-top: 1px solid #c1c1c1;
+    cursor:pointer;cursor: hand;
+    padding:5px 0px 5px 0px;
+}
+
+.leftNavSelected {
+     background-color:#CCFFFF;
+}
+
+.leftNav:hover{
+    background-color:#CCFFFF;
+
+}
+
+.leftNavLast{
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.leftNav.normal::selection {
+	background:#CCFFFF;
+	color:#fff;
+}
+
+.leftNav.moz::-moz-selection {
+	background:#CCFFFF;
+	color:#fff;
+}
+
+.contentHeader{
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size:24px;
+    font-weight:normal;
+    color:#2c3237;
+}
+
+.hRule{
+  border-bottom: 1px solid #c1c1c1;
+  margin:34px 0px 34px 0px;
+}
+
+.contentText{
+     font-family: 'Helvetica Neue', Helvetica, Arial;
+     font-size:16px;
+     font-weight:normal;
+     color:#2c3237;
+     margin:0px 0px 20px 0px;
+
+}
+
+.datagrid {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size:13px;
+    font-weight:bold;
+    background: #fff;
+    color: #000000;
+    overflow: hidden;
+    border: 1px solid #C1C1C1; -webkit-border-radius: 3px;
+     -moz-border-radius: 3px; border-radius: 3px;
+     }
+
+.datagrid table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    }
+
+.datagrid table td {
+    padding: 26px 0px 27px 12px;
+    }
+
+.datagrid table thead th {
+    background-color:#2C3323;
+    color:#FFFFFF;
+    font-weight: bold;
+    padding: 11px 0px 11px 12px;
+    }
+
+.datagrid table thead th:first-child {
+    border: none;
+    width:40%
+    }
+
+.datagrid table tbody td {
+    border-left: 0px solid #C1C1C1;
+    border-bottom: 1px solid #C1C1C1;
+    font-weight: normal;
+    }
+
+.datagrid table tbody td:first-child {
+    font-weight: bold;
+    border-left: none;
+    width:40%
+    }
+
+.datagrid table tbody td:first-child img{
+    margin:0px 10px 0px 0px
+    }
+
+.datagrid table tbody tr:last-child td {
+    border-bottom: none;
+    }
+
+.supportClient{
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size:18px;
+    font-weight:normal;
+    color:#000000;
+    background-color:#f0f0f0;
+    margin: 20px 0px 20px 30px
+}
+
+.supportLabel{
+    font-size:13px;
+    color:#757575;
+    }
+
+.supportName{
+     font-weight:bold;
+}
+
+.supportName, .supportEmail, .supportPhone, .supportComments {
+     margin: 0px 0px 30px 0px
+}
+
+
+ .navbar .nav > li > a{
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 13px;
+    font-weight:bold;
+    color:rgb(255,255,255);
+	text-decoration: none;
+	text-shadow: 0px 0px 0px rgb(0,0,0) ;
+	text-shadow: 0px 0px 0px rgb(0,0,0) ;
+ }
+ 
+ .navbar .nav > li > a:focus , .navbar .nav > li > a:hover{
+    background-color: #d7edfa;
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    background-color: #d7edfa;
+    color: #a5a5a5;
+}
+
+.dropdown-menu{
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 13px;
+    font-weight:normal;
+    color:#26a2ed;
+}
+
+.dropdown-menu > li > a {
+	color:#26a2ed
+}
+
+.navbar-inner {
+	padding-left: 12px;
+	padding-right: 0px;
+}
+
+.navbar .nav > li > a {
+	padding: 10px 12px 23px 12px;
+}
+
+.welcomeNotice {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 13px;
+    font-weight:normal;
+    color:#000000;
+	background-color:#d7edfa;
+	padding:12px 30px 12px 12px
+ }
+
+.plannedReleasse{
+    font-size: 16px;
+    font-weight:bold;
+	margin-bottom:20px
+}
+
+.posted {
+	margin-bottom:20px
+}
+
+.posteddate{
+	font-weight:bold;
+	color:#26a2ed;
+	margin-bottom:20px
+}
+

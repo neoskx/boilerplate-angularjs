@@ -21,7 +21,12 @@ module.exports = {
 
 	'app_files': {
 		// All the JavaScript files used in this project
-		'app_js': ['<%= source_dir %>/**/*.js', '!<%= source_dir %>/**/*.spec.js', '!<%= source_dir %>/**/*.lang.js', '!<%= source_dir %>/vendor/**/*.js'],
+		'app_js': [
+			'<%= source_dir %>/common/**/*.js',
+			'<%= source_dir %>/app/**/*.js',
+			'!<%= source_dir %>/**/*.spec.js',
+			'!<%= source_dir %>/**/*.lang.js'
+		],
 		// All test files
 		'spec_js': ['<%= source_dir %>/**/*.spec.js'],
 		// Language files
@@ -31,10 +36,11 @@ module.exports = {
 		'tpl': ['<%= source_dir %>/**/*.tpl.html'],
 		// All css file.
 		'less': {
-			'src': ['<%= source_dir %>/assets/less/stylesheet.less'],
+			'src': ['<%= source_dir %>/assets/less/*.less'],
 			'dest_dev': '<%= source_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css',
 			'dest_prod': '<%= production_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css'
 		},
+
 		'lessWatch': ['<%= source_dir %>/assets/less/**/*.less']
 	},
 
@@ -44,9 +50,11 @@ module.exports = {
 			'vendor/angular/angular-route.js',
 			'vendor/angular-ui/bootstrap/ui-bootstrap-custom-0.1.0-SNAPSHOT.js',
 			'vendor/jquery/jquery.js',
-			'vendor/mongolab/mongolab-resource.js'
+			'vendor/bootstrap/js/bootstrap.js'
 		],
-		'css': [],
+		'css': [
+			'vendor/bootstrap/css/bootstrap.css'
+		],
 		'assets': []
 	}
 };

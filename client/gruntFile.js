@@ -69,7 +69,7 @@ module.exports = function(grunt) {
           'zeroUnits': false
         },
         'src': ['<%= app_files.less.src%>'],
-        'dest':'<%= app_files.less.dest_dev%>'
+        'dest':'<%= app_files.less.dest_dev %>'
       },
       'production':{
         'options': {
@@ -108,10 +108,10 @@ module.exports = function(grunt) {
         'development':{
           'dir': '<%= source_dir %>',
           'src': [
-            '<%= vendor_files.js%>',
-            '<%= app_files.app_js %>',
-            '<%= recess.development.dest %>',
-            '<%= vendor_files.css %>'
+            '<%= vendor_files.css %>',
+            '<%= vendor_files.js %>',
+            '<%= app_files.less.dest_dev %>',
+            '<%= app_files.app_js%>'
           ]
         },
         'production':{
@@ -146,6 +146,7 @@ module.exports = function(grunt) {
    * compilation.
    */
   grunt.registerMultiTask( 'index', 'Process index.html template', function () {
+
     var dirRE = new RegExp( '^('+grunt.config('build_dir')+'|'+grunt.config('source_dir')+'|'+grunt.config('production_dir')+')\/', 'g' );
     var jsFiles = filterForJS( this.filesSrc ).map( function ( file ) {
       return file.replace( dirRE, '' );
@@ -154,7 +155,7 @@ module.exports = function(grunt) {
       return file.replace( dirRE, '' );
     });
 
-    grunt.file.copy('src/index-original.html', this.data.dir + '/index.html', { 
+    grunt.file.copy( this.data.dir + '/index-original.html', this.data.dir + '/index.html', { 
       process: function ( contents, path ) {
         return grunt.template.process( contents, {
           data: {

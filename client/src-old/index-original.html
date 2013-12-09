@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html lang="en" ng-app="app">
 <head>
-  <title>TIBCO Spotfire Cloud Enterprise</title>
+
   <!-- compiled CSS -->
   <% styles.forEach( function ( file ) { %>
   <link rel="stylesheet" type="text/css" href="<%= file %>
@@ -13,11 +13,9 @@
   <script type="text/javascript" src="<%= file %>"></script>
   <% }); %></head>
 
-</head>
-<body>
-
-  <div>This is index page</div>
-
+<body ng-controller="AppCtrl">
+  <div ng-include="'app/app/header.tpl.html'"></div>
+  <div ng-include="'app/app/notifications.tpl.html'" class="container-fluid" ng-show="notifications.getCurrent().length"></div>
+  <div ng-view class="container-fluid"></div>
 </body>
-
 </html>

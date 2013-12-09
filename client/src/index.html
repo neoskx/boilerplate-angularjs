@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html ng-app="myApp">
 <head>
-
+  <title>AngularJS Boilerplate</title>
   <!-- compiled CSS -->
   
-  <link rel="stylesheet" type="text/css" href="assets/css/angularjs-boilerplate-0.1.0.css
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css
   " />
   
 
@@ -18,92 +18,18 @@
   
   <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
   
-  <script type="text/javascript" src="vendor/mongolab/mongolab-resource.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
   
-  <script type="text/javascript" src="app/admin.projects/admin-projects.js"></script>
+  <script type="text/javascript" src="common/services/serviceHelper.js"></script>
   
-  <script type="text/javascript" src="app/admin.users/admin-users-edit.js"></script>
-  
-  <script type="text/javascript" src="app/admin.users/admin-users-list.js"></script>
-  
-  <script type="text/javascript" src="app/admin.users/admin-users.js"></script>
-  
-  <script type="text/javascript" src="app/admin.users/uniqueEmail.js"></script>
-  
-  <script type="text/javascript" src="app/admin.users/validateEquals.js"></script>
-  
-  <script type="text/javascript" src="app/admin/admin.js"></script>
-  
-  <script type="text/javascript" src="app/app/app.js"></script>
-  
-  <script type="text/javascript" src="app/dashboard/dashboard.js"></script>
-  
-  <script type="text/javascript" src="app/projects.productbacklog/productbacklog.js"></script>
-  
-  <script type="text/javascript" src="app/projects.sprints.tasks/tasks.js"></script>
-  
-  <script type="text/javascript" src="app/projects.sprints/sprints.js"></script>
-  
-  <script type="text/javascript" src="app/projects/projects.js"></script>
-  
-  <script type="text/javascript" src="app/projectsinfo/projectsinfo.js"></script>
-  
-  <script type="text/javascript" src="common/directives/crud/crud.js"></script>
-  
-  <script type="text/javascript" src="common/directives/crud/crudButtons.js"></script>
-  
-  <script type="text/javascript" src="common/directives/crud/edit.js"></script>
-  
-  <script type="text/javascript" src="common/directives/gravatar.js"></script>
-  
-  <script type="text/javascript" src="common/directives/modal.js"></script>
-  
-  <script type="text/javascript" src="common/resources/backlog.js"></script>
-  
-  <script type="text/javascript" src="common/resources/projects.js"></script>
-  
-  <script type="text/javascript" src="common/resources/sprints.js"></script>
-  
-  <script type="text/javascript" src="common/resources/tasks.js"></script>
-  
-  <script type="text/javascript" src="common/resources/users.js"></script>
-  
-  <script type="text/javascript" src="common/security/authorization.js"></script>
-  
-  <script type="text/javascript" src="common/security/index.js"></script>
-  
-  <script type="text/javascript" src="common/security/interceptor.js"></script>
-  
-  <script type="text/javascript" src="common/security/login/LoginFormController.js"></script>
-  
-  <script type="text/javascript" src="common/security/login/login.js"></script>
-  
-  <script type="text/javascript" src="common/security/login/toolbar.js"></script>
-  
-  <script type="text/javascript" src="common/security/retryQueue.js"></script>
-  
-  <script type="text/javascript" src="common/security/security.js"></script>
-  
-  <script type="text/javascript" src="common/services/breadcrumbs.js"></script>
-  
-  <script type="text/javascript" src="common/services/crud.js"></script>
-  
-  <script type="text/javascript" src="common/services/crudRouteProvider.js"></script>
-  
-  <script type="text/javascript" src="common/services/exceptionHandler.js"></script>
-  
-  <script type="text/javascript" src="common/services/httpRequestTracker.js"></script>
-  
-  <script type="text/javascript" src="common/services/i18nNotifications.js"></script>
-  
-  <script type="text/javascript" src="common/services/localizedMessages.js"></script>
-  
-  <script type="text/javascript" src="common/services/notifications.js"></script>
+  <script type="text/javascript" src="app/main/app.js"></script>
   </head>
 
-<body ng-controller="AppCtrl">
-  <div ng-include="'app/app/header.tpl.html'"></div>
-  <div ng-include="'app/app/notifications.tpl.html'" class="container-fluid" ng-show="notifications.getCurrent().length"></div>
-  <div ng-view class="container-fluid"></div>
+</head>
+<body>
+
+  <div>This is index page</div>
+
 </body>
+
 </html>
