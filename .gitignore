@@ -1,8 +1,7 @@
-*.sw*
-*~
 build/
 bin/
 node_modules/
 log/
-logs/
-client/src/assets/css/*
+release/
+.svn/
+.DS_Store

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Boilerplate</title>
+  <!-- compiled CSS -->
+  <% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>
+  " />
+  <% }); %>
+
+  <!-- compiled JavaScript -->
+  <% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script>
+  <% }); %>
+
+</head>
+<body>
+
+  <div>This is index page</div>
+
+</body>
+
+</html>

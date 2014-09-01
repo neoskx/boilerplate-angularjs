@@ -1,0 +1,28 @@
+{
+	"tags"      : {
+		"allowUnknownTags" : true
+	},
+	"plugins"   : ["plugins/markdown"],
+
+	"templates" : {
+		"systemName"			: "project boilerplate - api document",
+		"footer"				: "This is a footer",
+		"copyright"				: "Copyright 2014 @ Shaoke Xu(shaokexu@gmail.com)",
+		"navType"				: "inline",
+		"cleverLinks"			: true,
+		"monospaceLinks"        : false,
+		"dateFormat"            : "ddd MMM Do YYYY",
+		"outputSourceFiles"     : true,
+		"outputSourcePath"      : true,
+		"theme"                 : "cerulean",
+		"linenums"              : true,
+		"collapseSymbols"       : true,
+		"inverseNav"            : true,
+		"highlightTutorialCode" : true,
+		"protocol": "fred://"
+	},
+	"markdown"  : {
+		"parser"   : "gfm",
+		"hardwrap" : true
+	}
+}
