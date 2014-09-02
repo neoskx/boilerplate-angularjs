@@ -11,8 +11,6 @@ _What's features, this project has_
 _If need add how to get started_
 
 ## Folder Structure
-
-
 ```
 angularjs-boilerplate
     |-- .bowerrc
@@ -67,14 +65,20 @@ angularjs-boilerplate
         * Test file:          **.spec.js
         * Template file: **.tpl.html
         * Language file: **.lang.js
+    4. AngularJS template path should be relative to `src` folder. 
+        
+        For example:
+        `ng-include="'app/landing/landing.tpl.html'"`
+        
  * `vendor`:  Install all used libraries to this folder
 
 ## Style Guide
 
-1. **JavaScript Style Guide**
+##### JavaScript Style Guide
     
-    Recommend [Google's JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
-2. 
+Recommend [Google's JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+#### AngularJS Style Guide
+Recommend [AngularJS Style Guide](https://github.com/johnpapa/angularjs-styleguide)
 
 ## Project Configuration
 
@@ -127,4 +131,4 @@ This application is developed by Shaoke Xu. You can use following way to contact
 **Email**: [ shaokexu@gmail.com ](shaokexu@gmail.com)
 
 ## License
-**Project Name** is available under the MIT license. See the LICENSE file for more info.
+**AngularJS Boilerplate** is available under the MIT license. See the LICENSE file for more info.
