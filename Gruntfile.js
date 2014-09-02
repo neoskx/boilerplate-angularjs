@@ -83,8 +83,17 @@ module.exports = function(grunt) {
          * 2. In `procduction` mode, we compile it, and put it to `partials/template.js`
          */
         html2js: {
+            development : {
+                options: {
+                    module: 'template',
+                    base: 'src'
+                },
+                src    : [],
+                dest   : '<%= project_config.build_dir %>/js/<%= pkg.name %>.tpl.js'
+            },
             production : {
                 options: {
+                    module: 'template',
                     base: 'src'
                 },
                 src    : ['<%= project_config.app_files.tpl.src %>'],
@@ -106,8 +115,9 @@ module.exports = function(grunt) {
                     'assets/**/*.css',
                     'vendor/**/*.js',
                     'common/**/*.js',
-                    'app/**/*.js',
-                    '!vendor/**/*.min.*'
+                    '**/*.js',
+                    '!vendor/**/*.min.*',
+                    '!vendor/**/*.min.css'
                 ]
             },
             production: {
@@ -116,9 +126,14 @@ module.exports = function(grunt) {
                 src: [
                     'vendor/**/jquery.js',
                     'vendor/**/angular.js',
+                    'vendor/**/*.js',
                     'vendor/**/*.css',
                     'assets/**/*.css',
-                    'js/**/*.min.js'
+                    'js/**/*.tpl.js',
+                    'js/**/*.js',
+                    '!js/**/*.min.js',
+                    '!vendor/**/*.min.js',
+                    '!vendor/**/*.min.css'
                 ]
             }
         },

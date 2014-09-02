@@ -72,13 +72,7 @@ module.exports = {
          * Third part libraries depended by this project
          */
         vendor: [
-            'vendor/bootstrap/css/bootstrap.css',
-            'vendor/bootstrap/css/bootstrap-theme.css',
-            'vendor/jquery/jquery.js',
-            'vendor/bootstrap/js/bootstrap.js',
-            'vendor/angular/angular.js',
-            'vendor/angular/angular-route.js',
-            'vendor/angular-ui/bootstrap/ui-bootstrap.js'
+            'vendor/**/*'
         ]
     }
 };
