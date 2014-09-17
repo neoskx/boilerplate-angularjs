@@ -74,11 +74,33 @@ angularjs-boilerplate
 
 ## Style Guide
 
-##### JavaScript Style Guide
+#### JavaScript Style Guide
     
 Recommend [Google's JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 #### AngularJS Style Guide
 Recommend [AngularJS Style Guide](https://github.com/johnpapa/angularjs-styleguide)
+
+## Naming
+1. Default following [Camel Case](http://en.wikipedia.org/wiki/CamelCase)
+2. File Name: `feature.type.js`
+#### Module
+* **Module Name**: use **lowerCamelCase**. For example,  `formValidation`. If you want you can add a prefix for your module, like `uxApp`, `uxForm`
+* **Module File Name**: `moduleName.module.js`. For example, `formValidation.module.js`, `uxApp.module.js`, `uxForm.module.js`
+* **If b module is sub module of a module**: module name should be like `aModule.bModule`. For example, `uxForm.uxFormValidation`, so you can from module name know the relationship
+
+#### Controller
+* **Controller Name**: use **UpperCamelCase**. For example, `Form`. If you want you can add a prefix for your controller, like `UXForm`
+* **Controller File Name**: `ControllerName.controller.js`. For example, `Form.controller.js`
+
+#### Service
+* **Service Name**: use **lowerCamelCase**. For example, `serviceHelper`. If you want you can add a prefix for your controller, like `uxServiceHelper`
+* **Service File Name**: `serviceName.service.js`. For example, `serviceHelper.service.js`
+
+#### Directive, Filter, Test File, Lang File
+Similar to **Service**. For example, `tooltip`, `tooltip.directive.js`, `time`, `time.filter.js`, `Form.spec.js`, `FormEN.lang.js`
+
+
+
 
 ## Project Configuration
 
