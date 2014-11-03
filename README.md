@@ -51,7 +51,8 @@ angularjs-boilerplate
         ```
     app/
         |-- landing/
-            |-- landing.js
+            |-- landing.module.js
+            |-- landing.controller.js
             |-- landing.spec.js
             |-- landing.lang.js
             |-- landing.tpl.html
@@ -83,12 +84,14 @@ Recommend [AngularJS Style Guide](https://github.com/johnpapa/angularjs-stylegui
 ## Naming
 1. Default following [Camel Case](http://en.wikipedia.org/wiki/CamelCase)
 2. File Name: `feature.type.js`
-#### Module
-* **Module Name**: use **lowerCamelCase**. For example,  `formValidation`. If you want you can add a prefix for your module, like `uxApp`, `uxForm`
-* **Module File Name**: `moduleName.module.js`. For example, `formValidation.module.js`, `uxApp.module.js`, `uxForm.module.js`
-* **If b module is sub module of a module**: module name should be like `aModule.bModule`. For example, `uxForm.uxFormValidation`, so you can from module name know the relationship
 
-#### Controller
+#### Module(It seems to Java's Package)
+* **Module Folder Name**: use **lower case**. For example, `sec`, `uxform.uxformvalidation`
+* **Module Name**: use **lower case**. For example,  `formvalidation`. If you want you can add a prefix for your module, like `uxapp`, `uxform`
+* **Module File Name**: `modulename.module.js`. For example, `formvalidation.module.js`, `uxapp.module.js`, `uxform.module.js`
+* **If b module is sub module of a module**: module name should be like `amodule.bmodule`. For example, `uxform.uxformvalidation`, so you can from module name know the relationship
+
+#### Controller(It seems to Java's Class)
 * **Controller Name**: use **UpperCamelCase**. For example, `Form`. If you want you can add a prefix for your controller, like `UXForm`
 * **Controller File Name**: `ControllerName.controller.js`. For example, `Form.controller.js`
 
@@ -99,6 +102,8 @@ Recommend [AngularJS Style Guide](https://github.com/johnpapa/angularjs-stylegui
 #### Directive, Filter, Test File, Lang File
 Similar to **Service**. For example, `tooltip`, `tooltip.directive.js`, `time`, `time.filter.js`, `Form.spec.js`, `FormEN.lang.js`
 
+#### Style
+Each module can have a style file, named `modulename.less`, and put it to `assets/less/modulename.less`
 
 
 
