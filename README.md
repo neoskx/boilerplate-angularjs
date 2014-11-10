@@ -5,10 +5,15 @@ A startup template of [AngularJS](http://angularjs.org) Project.
 ===================
 
 ## Features
-_What's features, this project has_
+1. Folder Structure
+2. Code Style Guide
+4. Mock Server/Dummy Data
+5. Localization
+6. Test Environment
+7. Generate documents
+8. Code quality check with JSHint 
+9. Automation
 
-## Get Started
-_If need add how to get started_
 
 ## Folder Structure
 ```
@@ -20,6 +25,7 @@ angularjs-boilerplate
     |-- LICENSE
     |-- package.json
     |-- README.md
+    |-- test/
     |-- src/
         |-- app/
             |-- landing/
@@ -63,7 +69,7 @@ angularjs-boilerplate
         ```
     2. Put all the styles to `assets` folder, also images, each module folder include js and template file
     3. File Name Standard：
-        * Test file:          **.spec.js
+        * Test file: **.spec.js
         * Template file: **.tpl.html
         * Language file: **.lang.js
     4. AngularJS template path should be relative to `src` folder. 
@@ -73,19 +79,20 @@ angularjs-boilerplate
         
  * `vendor`:  Install all used libraries to this folder
 
-## Style Guide
+## Code Style Guide
 
-#### JavaScript Style Guide
+### JavaScript Style Guide
     
 Recommend [Google's JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
-#### AngularJS Style Guide
-Recommend [AngularJS Style Guide](https://github.com/johnpapa/angularjs-styleguide)
 
-## Naming
+### AngularJS Style Guide
+Based on [AngularJS Style Guide](https://github.com/johnpapa/angularjs-styleguide), but following style guide is high priority than it.
+
+#### Naming
 1. Default following [Camel Case](http://en.wikipedia.org/wiki/CamelCase)
 2. File Name: `feature.type.js`
 
-#### Module(It seems to Java's Package)
+#### Module(It similar with Java's Package)
 * **Module Folder Name**: use **lower case**. For example, `sec`, `uxform.uxformvalidation`
 * **Module Name**: use **lower case**. For example,  `formvalidation`. If you want you can add a prefix for your module, like `uxapp`, `uxform`
 * **Module File Name**: `modulename.module.js`. For example, `formvalidation.module.js`, `uxapp.module.js`, `uxform.module.js`
@@ -102,10 +109,12 @@ Recommend [AngularJS Style Guide](https://github.com/johnpapa/angularjs-stylegui
 #### Directive, Filter, Test File, Lang File
 Similar to **Service**. For example, `tooltip`, `tooltip.directive.js`, `time`, `time.filter.js`, `Form.spec.js`, `FormEN.lang.js`
 
-#### Style
+#### CSS files
 Each module can have a style file, named `modulename.less`, and put it to `assets/less/modulename.less`
 
 
+## Get Started
+_If need add how to get started_
 
 ## Project Configuration
 
