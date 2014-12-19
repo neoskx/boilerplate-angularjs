@@ -6,13 +6,13 @@ A startup template of [AngularJS](http://angularjs.org) Project.
 
 ## Features
 1. Folder Structure
-2. Code Style Guide
+2. Code Standard
 4. Mock Server/Dummy Data
 5. Localization
 6. Test Environment
-7. Generate documents
-8. Code quality check with JSHint 
-9. Automation
+7. Documents
+8. Code quality check 
+9. Build Automation
 
 
 ## Folder Structure
