@@ -1,5 +1,5 @@
 {
-  "directory": "sr/vendor",
+  "directory": "src/vendor",
   "json": "bower.json"
 }
 
